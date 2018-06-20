@@ -19,6 +19,8 @@ subprojects {
     dependencies {
         compile libs.common
         testCompile libs.test
+        compile group: 'org.projectlombok', name: 'lombok', version: '1.16.10'
+
     }
     [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 

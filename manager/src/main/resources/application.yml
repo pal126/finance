@@ -1,0 +1,27 @@
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss.SSS
+    time-zone: GMT+8
+  datasource:
+    url: jdbc:mysql://sh-cdb-nqc37m99.sql.tencentcdb.com:63069/finance?user=root&password=wang0123&useUnicode=true&characterEncoding=utf-8
+#    url: jdbc:h2:mem:manager;DB_CLOSE_ON_EXIT=FALSE
+  jpa:
+    show-sql: true
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: create-drop
+  activemq:
+    broker-url: tcp://192.168.0.6:5672
+  jms:
+    pub-sub-domain: true
+server:
+  servlet:
+    context-path: /manager
+  port: 8081
+swagger:
+  groupName: manger
+  basePackage: com.imooc.manager.controller
+
+logging:
+   level:
+      com.googlecode.jsonrpc4j: debug
