@@ -5,6 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * 管理端启动类
+ *
  * @author pal
  */
 @SpringBootApplication
